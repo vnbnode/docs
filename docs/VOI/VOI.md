@@ -1,7 +1,7 @@
-# VOI Network
-
-![VOI Network](https://github.com/vnbnode/VNBnode-Guides/blob/main/VOI/voi.jpg?raw=true)
-
+# <p align="center"> VOI Network </p>
+<p align="center">
+  <img height="100" height="auto" src="/VOI/voi.jpg?raw=true">
+</p>
 
 ### 1/ Need install software and its updates
 ```
