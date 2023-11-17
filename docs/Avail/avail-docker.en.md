@@ -1,6 +1,32 @@
-# Run Avail Docker
+# Run Avail Docker v1.8.0.2 (Goldberg)
 
-## Version 1.8.0.2 (Goldberg)
+## Recommended Hardware Requirements 
+![image](https://github.com/vnbnode/VNBnode-Guides/assets/76662222/7449170a-c03a-4502-8ffb-26455e413e33)
+
+
+## Option 1 (Automatic)
+```
+wget https://raw.githubusercontent.com/vnbnode/VNBnode-Guides/main/Avail/Technology/avail-auto.sh && bash avail-auto.sh
+```
+## Option 2 (Manual)
+
+### Install Docker
+```
+sudo apt-get update
+sudo apt-get install \
+ca-certificates \
+curl \
+gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+echo \
+"deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+"$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
 
 ### 1/ Pull image new 
 ```
@@ -12,7 +38,7 @@ sudo docker run -v $(pwd)/root/avail/state:/da/state:rw -v $(pwd)/root/avail/key
 ```
 ### 3/ Run validator on Docker
 ```
-cd /root/avail && wget https://raw.githubusercontent.com/vnbnode/VNBnode-Guides/main/Avail/validator.sh && bash validator.sh
+cd /root/avail && wget https://raw.githubusercontent.com/vnbnode/VNBnode-Guides/main/Avail/Technology/validator.sh && bash validator.sh
 ```
 ### 4/ Check log node
 ```
