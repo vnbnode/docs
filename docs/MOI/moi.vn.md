@@ -19,19 +19,6 @@ Website: [https://VNBnode.com](https://vnbnode.com)
 |   **SSD**   |           512 GB          |
 | **NETWORK** |          500 Mbps         |
 
-* Đây là cấu hình khuyến nghị mà dự án đề ra.
-
-## Cấu hình thấp nhất
-
-|   Thông số  |            Thấp nhất           |
-| :---------: | :----------------------------: |
-|   **CPU**   |    1 Core (ARM64 or x86-64)    |
-|   **RAM**   |           1 GB (DDR4)          |
-|   **SSD**   | 50 GB (bắt buộc phải trên 50G) |
-| **NETWORK** |            100 Mbps            |
-
-* Đây là cấu hình thấp nhất do team đã chạy thử thực tế và cho thấy vẫn đảm bảo node hoạt động tốt nếu thiết lập cấu hình thấp nhất như trên.
-
 ## Tạo tài khoản
 Step 1: Tạo tài khoản MOI ID từ IOMe
 *   Truy cập [**IOMe Login Page**](https://iome.ai/login/), để tạo tài khoản.
