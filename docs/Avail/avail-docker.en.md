@@ -1,4 +1,7 @@
 # Run Avail Docker v1.8.0.2 (Goldberg)
+<p align="center">
+  <img height="100" height="auto" src="/Avail/Technology/avail.png?raw=true">
+</p>
 
 ## Recommended Hardware Requirements 
 ![image](https://github.com/vnbnode/VNBnode-Guides/assets/76662222/7449170a-c03a-4502-8ffb-26455e413e33)
@@ -6,7 +9,7 @@
 
 ## Option 1 (Automatic)
 ```
-wget https://raw.githubusercontent.com/vnbnode/VNBnode-Guides/main/Avail/Technology/avail-auto.sh && bash avail-auto.sh
+cd $HOME && wget https://raw.githubusercontent.com/vnbnode/VNBnode-Guides/main/Avail/Technology/avail-auto.sh && bash avail-auto.sh
 ```
 ## Option 2 (Manual)
 
@@ -34,11 +37,11 @@ docker pull availj/avail:v1.8.0.2
 ```
 ### 2/ Run node
 ```
-sudo docker run -v $(pwd)/root/avail/state:/da/state:rw -v $(pwd)/root/avail/keystore:/da/keystore:rw -e DA_CHAIN=goldberg --name avail -e DA_NAME=<Fill Node name of you> -p 0.0.0.0:30333:30333 -p 9615:9615 -p 9933:9933 -d --restart unless-stopped availj/avail:v1.8.0.2
+sudo docker run -v $(pwd)$HOME/avail/state:/da/state:rw -v $(pwd)$HOME/avail/keystore:/da/keystore:rw -e DA_CHAIN=goldberg --name avail -e DA_NAME=<Fill Node name of you> -p 0.0.0.0:30333:30333 -p 9615:9615 -p 9933:9933 -d --restart unless-stopped availj/avail:v1.8.0.2
 ```
 ### 3/ Run validator on Docker
 ```
-cd /root/avail && wget https://raw.githubusercontent.com/vnbnode/VNBnode-Guides/main/Avail/Technology/validator.sh && bash validator.sh
+cd $HOME/avail && wget https://raw.githubusercontent.com/vnbnode/VNBnode-Guides/main/Avail/Technology/validator.sh && bash validator.sh
 ```
 ### 4/ Check log node
 ```
@@ -60,7 +63,7 @@ docker pull availj/avail:v1.8.0.2
 ```
 ### 4/ Run node
 ```
-sudo docker run -v $(pwd)/state:/da/state:rw -v $(pwd)/keystore:/da/keystore:rw -e DA_CHAIN=goldberg --name avail -e DA_NAME=<Fill Node name of you> -p 0.0.0.0:30333:30333 -p 9615:9615 -p 9933:9933 -d --restart unless-stopped availj/avail:v1.8.0.2
+sudo docker run -v $(pwd)$HOME/avail/state:/da/state:rw -v $(pwd)$HOME/avail/keystore:/da/keystore:rw -e DA_CHAIN=goldberg --name avail -e DA_NAME=<Fill Node name of you> -p 0.0.0.0:30333:30333 -p 9615:9615 -p 9933:9933 -d --restart unless-stopped availj/avail:v1.8.0.2
 ```
 ### 5/ Check log node
 ```
