@@ -210,4 +210,7 @@ docker container prune
 docker container prune
 ```
 
-* Chạy lại node [#start-the-guardian-node](moi-guardian-node.md#start-the-guardian-node "mention")
+* Chạy lại node
+```
+sudo docker run -p 1600:1600/tcp -p 6000:6000/tcp -p 6000:6000/udp -it -d -w /data -v $(pwd):/data sarvalabs/moipod:latest server --babylon --data-dir {DIRPATH} --log-level DEBUG --node-password {NODE_PWD}
+```
