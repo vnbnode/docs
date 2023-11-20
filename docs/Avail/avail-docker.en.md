@@ -1,6 +1,6 @@
 # Run Avail Docker v1.8.0.2 (Goldberg)
 <p align="center">
-  <img height="100" height="auto" src="/Avail/Technology/avail.png?raw=true">
+  <img height="100" height="auto" src="https://github.com/vnbnode/VNBnode-Guides/blob/main/Avail/Technology/avail.png?raw=true">
 </p>
 
 ## Recommended Hardware Requirements 
